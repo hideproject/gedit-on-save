@@ -1,5 +1,5 @@
-Gedit 3 On Save
-===============================================
+Gedit 3 On Save Plugin
+======================
 
 Plugin runs a command on save of document.
 
@@ -40,7 +40,7 @@ Create a file with ```.json``` extension in plugin directory (default ```~/.loca
 			"cmd": "jshint %file%",
 			"active": "yes"
 		}
-	],
+	]
 }
 ```
 
@@ -71,4 +71,5 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 -----------------
 
-Author: [Jan Pecha](http://janpecha.iunas.cz), <janpecha@email.cz>
+Author: [Jan Pecha](http://janpecha.iunas.cz)
+
