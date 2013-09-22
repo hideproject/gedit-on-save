@@ -1,0 +1,14 @@
+{
+	"*/composer.json": [
+		{
+			"cmd": "composer validate %file%",
+			"active": "yes"
+		}
+	],
+	"*/composer.lock": [
+		{
+			"cmd": "composer validate %file%",
+			"active": "yes"
+		}
+	]
+}

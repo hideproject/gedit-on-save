@@ -1,0 +1,8 @@
+{
+	"*.json": [
+		{
+			"cmd": "jsonlint %file% -q",
+			"active": "yes"
+		}
+	]
+}

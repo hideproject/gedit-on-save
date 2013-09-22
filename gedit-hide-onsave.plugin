@@ -1,0 +1,9 @@
+[Plugin]
+Loader=python
+Module=gedit-hide-onsave
+IAge=3
+Name=Gedit3 "On Save" plugin
+Description=Runs a command on document save event
+Authors=Jan Pecha <janpecha@email.cz>
+Copyright=Copyright © 2013 Jan Pecha <janpecha@email.cz>
+Website=http://janpecha.iunas.cz/

@@ -1,0 +1,8 @@
+{
+	"*.js": [
+		{
+			"cmd": "jshint %file%",
+			"active": "yes"
+		}
+	]
+}
