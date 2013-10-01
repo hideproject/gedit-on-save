@@ -88,12 +88,14 @@ class GeditOnSavePlugin(GObject.Object, Gedit.ViewActivatable):
         lang = self.doc.get_language().get_name()
         path = self.doc.get_location().get_path()
         
-        for mask, cmds in self.setting.items():
-            if fnmatch.fnmatch(path, mask):
-                for cmd in cmds:
-                    if cmd.has_key("cmd"):
-                        if cmd.has_key("active") and cmd["active"] != "no":
-                            self.run_command(cmd["cmd"], path, lang)
+        for masks, cmds in self.setting.items():
+            splittedMasks = masks.split("|")
+            for mask in splittedMasks:
+                if fnmatch.fnmatch(path, mask):
+                    for cmd in cmds:
+                        if cmd.has_key("cmd"):
+                            if cmd.has_key("active") and cmd["active"] != "no":
+                                self.run_command(cmd["cmd"], path, lang)
 
     def run_command(self, command, path, lang):
         cmdline = command.replace("%file%", "'" + pipes.quote(path) + "'").replace("%lang%", "'" + pipes.quote(lang) + "'")
