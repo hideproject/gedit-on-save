@@ -2,7 +2,7 @@
 	"*.php|*.phpt|*.txt|*.texy|*.md|*.neon|*.js|*.css|*.less|*.styl|*.ini|*.py": [
 		{
 			"cmd": "sed -i 's/[ \t]*$//' %file%",
-			"active": "yes"
+			"active": "no"
 		}
 	]
 }
