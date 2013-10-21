@@ -1,0 +1,8 @@
+{
+	"*.coffee": [
+		{
+			"cmd": "coffee -c %file%",
+			"active": "yes"
+		}
+	]
+}
